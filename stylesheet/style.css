@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Container */
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../assets/images/background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Logo */
+.logo {
+    padding: 20px 0;
+}
+
+.logo img {
+    width: 120px;
+    max-width: 100%;
+}
+
+/* Content */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.maintenance-text {
+    font-size: 18px;
+    margin-top: 80px;
+}
+
+.content h1 {
+    font-size: 48px;
+    padding: 15px 0;
+}
+
+.content h1 span {
+    color: #ff3753;
+}
+
+/* Launch Time */
+.launch-time {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.time-box {
+    min-width: 120px;
+    text-align: left;
+}
+
+.launch-time p {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.launch-time span {
+    font-size: 16px;
+}
+
+/* Button */
+.learn-more-btn {
+    background: transparent;
+    font-size: 16px;
+    padding: 12px 24px;
+    outline: none;
+    border: 2px solid #fff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.learn-more-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.learn-more-btn img {
+    width: 20px;
+    margin-left: 8px;
+}
+
+/* Rocket */
+.rocket {
+    width: 150px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+
+/* Animation */
+@keyframes rocket {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    100% {
+        bottom: 100vh;
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .maintenance-text {
+        font-size: 16px;
+        margin-top: 60px;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .launch-time p {
+        font-size: 40px;
+    }
+
+    .rocket {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .maintenance-text {
+        margin-top: 40px;
+    }
+
+    .content h1 {
+        font-size: 32px;
+    }
+
+    .launch-time {
+        gap: 15px;
+    }
+
+    .time-box {
+        min-width: 100px;
+    }
+
+    .launch-time p {
+        font-size: 32px;
+    }
+
+    .launch-time span {
+        font-size: 14px;
+    }
+
+    .rocket {
+        width: 100px;
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .maintenance-text {
+        font-size: 14px;
+        margin-top: 30px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .time-box {
+        min-width: 80px;
+    }
+
+    .launch-time p {
+        font-size: 28px;
+    }
+
+    .learn-more-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .learn-more-btn img {
+        width: 16px;
+    }
+
+    .rocket {
+        width: 80px;
+    }
+}
